@@ -105,6 +105,8 @@ module.exports = {
                 $(this).find('.panel').addClass('hidden');
               else
                 $(this).find('.panel-collapse').addClass('in');
+              if ($(this).data('collapse') === true)
+                $(this).find('.fa').removeClass('fa-angle-up').addClass('fa-angle-down');
             });
           } else
             $('sec').each(function () {
